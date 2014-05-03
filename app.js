@@ -1,8 +1,10 @@
-var roundRobot = require('node-sphero');
-var sphero = new roundRobot.Sphero();
+var spheron = require('spheron');
+var sphero = spheron.sphero();
+var spheroPort = '/dev/cu.Sphero-RGB';
+var COLORS = spheron.toolbelt.COLORS;
 
-sphero.on('connected', function(ball) {
-  ball.setRGBLED(0, 255, 0, false);
+sphero.on('open', function() {
+  sphero.setRGB(COLORS.BLUE, false);
 });
 
-sphero.connect();
+sphero.open(spheroPort);

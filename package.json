@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/grant/Sphero-Experiments/issues"
   },
-  "homepage": "https://github.com/grant/Sphero-Experiments"
+  "homepage": "https://github.com/grant/Sphero-Experiments",
+  "dependencies": {
+    "spheron": "0.0.3"
+  }
 }
